@@ -1,0 +1,17 @@
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 100vh;
+    background-color: var(--background);
+    .button{
+        width: 50%;
+        padding: 15px 28px;
+        margin: 10px;
+        color: var(--color3);
+    }
+    img{
+        margin: 50px;
+    }
+}
