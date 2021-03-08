@@ -5,13 +5,61 @@
   width: 25vw;
   height: 100vh;
   background-color: var(--background);
-  
-  h1{
-      text-align: center;
+  padding: 20px 0px;
+  .links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
-  button:focus{
-      border: none;
-      background-color: var(--background);
+  .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .icon {
+    margin: 10px 20px;
+  }
+  .icon:hover{
+      color: var(--color1);
+      transition: 0.3s;
+  }
+  img {
+    border-radius: 50%;
+    border: 5px solid rgba(242, 163, 101, 0.5);
+  }
+
+  h1 {
+    text-align: center;
+    color: var(--color2);
+  }
+  button:focus {
+    border: none;
+    background-color: var(--background);
   }
   button {
     display: inline-block;
@@ -57,5 +105,4 @@
       }
     }
   }
-  
 }

@@ -14,3 +14,5 @@ const theme = createMuiTheme({
         contrastText: '#000',
       },
 })
+
+export default theme

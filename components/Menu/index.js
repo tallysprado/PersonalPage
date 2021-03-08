@@ -9,7 +9,7 @@ export default function Menu(){
     return(
         <div id='menu'>
             <img
-            src='/smiley.png'
+            src='/perfil.jpeg'
             height={150}
             width={150}
             className='image'
@@ -27,7 +27,8 @@ export default function Menu(){
                 {icons.map(((icon) => (
                     <FontAwesomeIcon 
                     size='2x'
-                    color='#'
+                    color='#f2a365'
+                    className='icon'
                     icon={icon}/>
                 )))}
             </div>
