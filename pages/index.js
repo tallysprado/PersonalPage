@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Menu from '../components/Menu'
 import Landing from './Landing'
+
 export default function Home() {
   return (
     <div className={styles.container}>

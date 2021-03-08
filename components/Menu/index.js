@@ -1,7 +1,8 @@
 import {Button} from '@material-ui/core'
-import Image from 'next/image'
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faWhatsapp, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 const buttons = ['Sobre mim', 'Projetos', 'Contato']
+const icons = [faWhatsapp, faGithub, faLinkedin]
 
 export default function Menu(){
 
@@ -13,16 +14,23 @@ export default function Menu(){
             width={150}
             className='image'
             />
+            <h1>Tallys Cordeiro Prado</h1>
             {
                 buttons.map((button)=>(
-                    <Button 
-                    className='button'
-                    variant='contained'
-                    color='primary'>
-                    {button}
-                    </Button>
+                    <button>
+                        {button}
+                    </button>
                 ))
             }
+
+            <div className='links'> 
+                {icons.map(((icon) => (
+                    <FontAwesomeIcon 
+                    size='2x'
+                    color='#'
+                    icon={icon}/>
+                )))}
+            </div>
         </div>
     )
 }
