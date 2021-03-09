@@ -2,23 +2,43 @@
 #landing {
   display: flex;
   flex-direction: column;
-  
-  justify-content: center;
+  padding-top: 20px;
   align-items: center;
-
+  background-image: url("../../public/background.jpeg");
   width: 100%;
   background-color: var(--color1);
-  h1{
+  
+  .block{
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1 {
     letter-spacing: 0.15em;
+  }
+
+  .hello h1 {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    font-family: "Fira Code";
+    font-size: 3em;
+    color: black;
+    text-transform: none;
+    margin: 0 20px;
+    opacity: 1;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
   }
   .typewriter h1 {
     overflow: hidden;
     border-right: 0.15em solid orange;
     white-space: nowrap; //content on single line
-    margin: 0 auto; //keeps the scrolling effect
     letter-spacing: 0.15em;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    font-size: 3em;
+    animation: typing 2.5s steps(20, end), blink-caret 0.75s step-end infinite;
   }
+  
   @keyframes typing {
     from {
       width: 0;
