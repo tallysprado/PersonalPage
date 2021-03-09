@@ -1,4 +1,39 @@
-#landing{
-    background-color: var(--color1);
-    width: 100%;
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+#landing {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  background-color: var(--color1);
+  h1{
+    letter-spacing: 0.15em;
+  }
+  .typewriter h1 {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap; //content on single line
+    margin: 0 auto; //keeps the scrolling effect
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
 }
