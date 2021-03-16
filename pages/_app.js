@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import '../components/Menu/styles.scss'
 import '../pages/Landing/styles.scss'
 import '../pages/Projects/styles.scss'
+import "animate.css/animate.min.css"
 
 import '../pages/Landing/animations.scss'
 
