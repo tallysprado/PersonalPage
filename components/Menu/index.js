@@ -75,11 +75,11 @@ function growAnimation(document, animationPercentage) {
     $(".icon").css({
       width: `${-(currentPositionPercent)-30}px`,
       height: `${-(currentPositionPercent)-30}px`,
-
+      transform: `translate(0px, calc(${currentPositionPercent}px + 40vh))`
     })
     $(".links").css({
       zIndex: 5000,
-      top: `${currentPositionPercent+40}%`,
+      top: `${currentPositionPercent}%`,
       width: `${currentPositionPercent+100}%`,
       height: `${currentPositionPercent-100}%`,
 
