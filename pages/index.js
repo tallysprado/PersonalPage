@@ -3,7 +3,6 @@ import styles from "../styles/Home.module.css";
 import Menu from "../components/Menu";
 import Landing from "./Landing";
 import Projects from "./Projects";
-import About from './About'
 export default function Home() {
   return (
     <div className={styles.container}>
