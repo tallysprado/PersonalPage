@@ -1,8 +1,32 @@
 #projects{
-    height:100vh;
-    justify-content:center;
     display:flex;
+    height:100vh;
+    width: 100%;
+    align-items:center;
+    justify-content:center;
     background-color: var(--background);
+    .cards{
+        display:flex;
+        
+        height: 100%;
+        
+    }
+    .card{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: auto 40px auto 40px;
+                
+        background-color: var(--color3);
+        width: 18rem;
+        height: 23rem;
+    }
+    .button{
+        position: absolute;
+        bottom: 10px;
+        background-color: var(--color2);
+        border-color: var(--color2);
+    }
     h1{ 
 
         color: var(--color2);

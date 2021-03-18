@@ -37,7 +37,9 @@
 
 }
 
-.menu{
+
+
+#menu{
   display: flex;
   position: relative;
   flex-direction: column;
@@ -48,6 +50,13 @@
   width: 20vw;
   position: fixed;
   left: 0;
+
+  .preview{
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
 
   p {
     margin: auto;
@@ -89,6 +98,7 @@
 
   h1 {
     text-align: center;
+    margin: 10px auto 10px auto;
     color: var(--color2);
     font-size: 1.5em;
   }
