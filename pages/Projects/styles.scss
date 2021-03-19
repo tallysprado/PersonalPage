@@ -1,34 +1,86 @@
-#projects{
-    display:flex;
-    height:100vh;
-    width: 100%;
-    align-items:center;
-    justify-content:center;
-    background-color: var(--background);
-    .cards{
-        display:flex;
-        
-        height: 100%;
-        
-    }
-    .card{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin: auto 40px auto 40px;
-                
-        background-color: var(--color3);
-        width: 18rem;
-        height: 23rem;
-    }
-    .button{
-        position: absolute;
-        bottom: 10px;
-        background-color: var(--color2);
-        border-color: var(--color2);
-    }
-    h1{ 
+.page {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
 
-        color: var(--color2);
-    }
+#page2 {
+  background-color: var(--color2);
+  left: 100%;
+}
+.animate {
+  -webkit-animation: right-to-left 1s linear forwards;
+  animation: right-to-left 1s linear forwards;
+}
+@-webkit-keyframes right-to-left {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes right-to-left {
+  from {
+    left: 100%;
+  }
+  to {
+    display: flex;
+    left: 0;
+  }
+}
+.animate-out {
+  background-color: var(--color2);
+  -webkit-animation: left-to-right 500ms linear forwards;
+  animation: left-to-right 500ms linear forwards;
+}
+@-webkit-keyframes left-to-right {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes left-to-right {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+#projects {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  .cards {
+    display: flex;
+
+    height: 100%;
+  }
+  .card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: auto 40px auto 40px;
+
+    background-color: var(--color3);
+    width: 18rem;
+    height: 23rem;
+  }
+  .button {
+    position: absolute;
+    bottom: 10px;
+    background-color: var(--color2);
+    border-color: var(--color2);
+  }
+  h1 {
+    color: var(--color2);
+  }
 }
